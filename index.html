@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Salad</title>
+    <!-- main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- slider CSS -->
+    <link rel="stylesheet" href="/css/itc-slider.css">
+    <!-- JavaScript -->
+    <script src="/js/itc-slider.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="header__container">
+                <a href="#" class="header__logo logo">
+
+                    <div class="logo__ico svg">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_350)">
+                                <path
+                                    d="M17.0984 8.16492H7.90162C3.53781 8.16492 0 11.7087 0 16.0817C0 20.4547 3.53781 24 7.90162 24H17.0984C21.4622 24 25 20.4547 25 16.0817C25 11.7087 21.4622 8.16492 17.0984 8.16492ZM16.9261 23.0921C13.0637 23.0921 9.93201 19.9537 9.93201 16.0832C9.93201 12.2127 13.0637 9.07436 16.9261 9.07436C20.7885 9.07436 23.9202 12.2127 23.9202 16.0832C23.9202 19.9537 20.7885 23.0921 16.9261 23.0921Z"
+                                    fill="#34C759" />
+                                <path
+                                    d="M16.0047 4.68437C16.0047 5.68167 16.2632 6.61732 16.7169 7.42811C14.5112 7.04738 12.833 5.1206 12.833 2.80075C12.833 2.50942 12.8592 2.22426 12.9115 1.9468C13.3422 1.81578 13.8005 1.74487 14.2743 1.74487C15.0895 1.74487 15.8571 1.95451 16.5246 2.32137C16.1909 3.03967 16.0047 3.83967 16.0047 4.68437Z"
+                                    fill="#34C759" />
+                                <path
+                                    d="M22.2067 2.80077C22.2067 4.92023 20.8069 6.71137 18.8827 7.29557C18.552 7.39576 18.2074 7.46204 17.849 7.48516H17.8475C17.2676 6.70366 16.9246 5.7341 16.9246 4.68439C16.9246 4.03391 17.0568 3.41426 17.2953 2.8501C17.9674 1.26243 19.4856 0.123314 21.2838 0C21.8636 0.781503 22.2067 1.75106 22.2067 2.80077Z"
+                                    fill="#34C759" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2_350">
+                                    <rect width="25" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="logo__ico-text svg">
+                        <svg width="175" height="12" viewBox="0 0 175 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.966003 1.00399V11H3.164V6.68799H7.21V11H9.408V1.00399H7.21V4.83999H3.164V1.00399H0.966003Z"
+                                fill="#34C759" />
+                            <path
+                                d="M13.443 1.00399V11H21.031V9.15199H15.641V6.70199H20.485V4.99399H15.641V2.85199H20.919V1.00399H13.443Z"
+                                fill="#34C759" />
+                            <path
+                                d="M27.1411 7.13599L28.4431 3.46799H28.4711L29.7311 7.13599H27.1411ZM27.3511 1.00399L23.5711 11H25.7831L26.5671 8.77399H30.3051L31.0611 11H33.3431L29.6051 1.00399H27.3511Z"
+                                fill="#34C759" />
+                            <path d="M36.3051 1.00399V11H43.3751V9.15199H38.5031V1.00399H36.3051Z" fill="#34C759" />
+                            <path d="M47.6307 2.85199V11H49.8287V2.85199H52.8247V1.00399H44.6347V2.85199H47.6307Z"
+                                fill="#34C759" />
+                            <path
+                                d="M56.0773 1.00399V11H58.2753V6.68799H62.3213V11H64.5193V1.00399H62.3213V4.83999H58.2753V1.00399H56.0773Z"
+                                fill="#34C759" />
+                            <path
+                                d="M71.1443 7.10799V11H73.3423V7.16399L77.0523 1.00399H74.6023L72.2783 4.95199L69.9403 1.00399H67.4763L71.1443 7.10799Z"
+                                fill="#34C759" />
+                            <path
+                                d="M87.4867 7.68199H85.3587C85.3493 8.29799 85.4613 8.82999 85.6947 9.27799C85.928 9.72599 86.2407 10.0947 86.6327 10.384C87.034 10.6733 87.4913 10.8833 88.0047 11.014C88.5273 11.154 89.064 11.224 89.6147 11.224C90.296 11.224 90.8933 11.1447 91.4067 10.986C91.9293 10.8273 92.3633 10.608 92.7087 10.328C93.0633 10.0387 93.3293 9.69799 93.5067 9.30599C93.684 8.91399 93.7727 8.48932 93.7727 8.03199C93.7727 7.47199 93.6513 7.01466 93.4087 6.65999C93.1753 6.29599 92.8953 6.00666 92.5687 5.79199C92.242 5.57732 91.9107 5.42332 91.5747 5.32999C91.248 5.22732 90.9913 5.15732 90.8047 5.11999C90.1793 4.96132 89.6707 4.83066 89.2787 4.72799C88.896 4.62532 88.5927 4.52266 88.3687 4.41999C88.154 4.31732 88.0093 4.20532 87.9347 4.08399C87.86 3.96266 87.8227 3.80399 87.8227 3.60799C87.8227 3.39332 87.8693 3.21599 87.9627 3.07599C88.056 2.93599 88.1727 2.81932 88.3127 2.72599C88.462 2.63266 88.6253 2.56732 88.8027 2.52999C88.98 2.49266 89.1573 2.47399 89.3347 2.47399C89.6053 2.47399 89.8527 2.49732 90.0767 2.54399C90.31 2.59066 90.5153 2.66999 90.6927 2.78199C90.87 2.89399 91.01 3.04799 91.1127 3.24399C91.2247 3.43999 91.29 3.68732 91.3087 3.98599H93.4367C93.4367 3.40732 93.3247 2.91732 93.1007 2.51599C92.886 2.10532 92.592 1.76932 92.2187 1.50799C91.8453 1.24666 91.416 1.05999 90.9307 0.947991C90.4547 0.826658 89.9553 0.765991 89.4327 0.765991C88.9847 0.765991 88.5367 0.826658 88.0887 0.947991C87.6407 1.06932 87.2393 1.25599 86.8847 1.50799C86.53 1.75999 86.2407 2.07732 86.0167 2.45999C85.802 2.83332 85.6947 3.27666 85.6947 3.78999C85.6947 4.24732 85.7787 4.63932 85.9467 4.96599C86.124 5.28332 86.3527 5.54932 86.6327 5.76399C86.9127 5.97866 87.23 6.15599 87.5847 6.29599C87.9393 6.42666 88.3033 6.53866 88.6767 6.63199C89.0407 6.73466 89.4 6.82799 89.7547 6.91199C90.1093 6.99599 90.4267 7.09399 90.7067 7.20599C90.9867 7.31799 91.2107 7.45799 91.3787 7.62599C91.556 7.79399 91.6447 8.01333 91.6447 8.28399C91.6447 8.53599 91.5793 8.74599 91.4487 8.91399C91.318 9.07266 91.1547 9.19866 90.9587 9.29199C90.7627 9.38532 90.5527 9.45066 90.3287 9.48799C90.1047 9.51599 89.8947 9.52999 89.6987 9.52999C89.4093 9.52999 89.1293 9.49732 88.8587 9.43199C88.588 9.35732 88.35 9.24999 88.1447 9.10999C87.9487 8.96066 87.79 8.76933 87.6687 8.53599C87.5473 8.30266 87.4867 8.01799 87.4867 7.68199Z"
+                                fill="#34C759" />
+                            <path
+                                d="M106.7 11L109.388 1.00399H107.232L105.594 7.89199H105.566L103.858 1.00399H101.8L100.064 7.80799H100.036L98.4545 1.00399H96.2565L98.9025 11H101.128L102.794 4.19599H102.822L104.516 11H106.7Z"
+                                fill="#34C759" />
+                            <path d="M112.501 1.00399V11H114.699V1.00399H112.501Z" fill="#34C759" />
+                            <path d="M120.942 2.85199V11H123.14V2.85199H126.136V1.00399H117.946V2.85199H120.942Z"
+                                fill="#34C759" />
+                            <path
+                                d="M136.053 4.36399H138.181C138.115 3.78532 137.957 3.27199 137.705 2.82399C137.453 2.37599 137.131 2.00266 136.739 1.70399C136.356 1.39599 135.917 1.16266 135.423 1.00399C134.937 0.845324 134.419 0.765991 133.869 0.765991C133.103 0.765991 132.413 0.901325 131.797 1.17199C131.19 1.44266 130.677 1.81599 130.257 2.29199C129.837 2.76799 129.515 3.32799 129.291 3.97199C129.067 4.60666 128.955 5.29732 128.955 6.04399C128.955 6.77199 129.067 7.45332 129.291 8.08799C129.515 8.71333 129.837 9.25933 130.257 9.72599C130.677 10.1927 131.19 10.5613 131.797 10.832C132.413 11.0933 133.103 11.224 133.869 11.224C134.485 11.224 135.049 11.1307 135.563 10.944C136.076 10.7573 136.524 10.4867 136.907 10.132C137.289 9.77732 137.597 9.34799 137.831 8.84399C138.064 8.33999 138.209 7.77532 138.265 7.14999H136.137C136.053 7.82199 135.819 8.36333 135.437 8.77399C135.063 9.18466 134.541 9.38999 133.869 9.38999C133.374 9.38999 132.954 9.29666 132.609 9.10999C132.263 8.91399 131.983 8.65732 131.769 8.33999C131.554 8.02266 131.395 7.66799 131.293 7.27599C131.199 6.87466 131.153 6.46399 131.153 6.04399C131.153 5.60532 131.199 5.18066 131.293 4.76999C131.395 4.35932 131.554 3.99532 131.769 3.67799C131.983 3.35132 132.263 3.09466 132.609 2.90799C132.954 2.71199 133.374 2.61399 133.869 2.61399C134.139 2.61399 134.396 2.66066 134.639 2.75399C134.891 2.83799 135.115 2.95932 135.311 3.11799C135.507 3.27666 135.67 3.46332 135.801 3.67799C135.931 3.88332 136.015 4.11199 136.053 4.36399Z"
+                                fill="#34C759" />
+                            <path
+                                d="M141.866 1.00399V11H144.064V6.68799H148.11V11H150.308V1.00399H148.11V4.83999H144.064V1.00399H141.866Z"
+                                fill="#34C759" />
+                            <path
+                                d="M154.343 1.00399V11H161.931V9.15199H156.541V6.70199H161.385V4.99399H156.541V2.85199H161.819V1.00399H154.343Z"
+                                fill="#34C759" />
+                            <path
+                                d="M167.719 5.52599V2.71199H170.127C170.631 2.71199 171.009 2.82399 171.261 3.04799C171.513 3.26266 171.639 3.61266 171.639 4.09799C171.639 4.60199 171.513 4.96599 171.261 5.18999C171.009 5.41399 170.631 5.52599 170.127 5.52599H167.719ZM165.521 1.00399V11H167.719V7.09399H169.917C170.467 7.09399 170.864 7.21532 171.107 7.45799C171.349 7.70066 171.508 8.08332 171.583 8.60599C171.639 9.00732 171.681 9.42733 171.709 9.86599C171.737 10.3047 171.811 10.6827 171.933 11H174.131C174.028 10.86 173.949 10.692 173.893 10.496C173.846 10.2907 173.809 10.076 173.781 9.85199C173.762 9.62799 173.748 9.40866 173.739 9.19399C173.729 8.97933 173.72 8.79266 173.711 8.63399C173.692 8.38199 173.655 8.12999 173.599 7.87799C173.552 7.62599 173.473 7.39732 173.361 7.19199C173.249 6.97732 173.104 6.79532 172.927 6.64599C172.749 6.48732 172.525 6.37066 172.255 6.29599V6.26799C172.815 6.04399 173.216 5.71732 173.459 5.28799C173.711 4.85866 173.837 4.34999 173.837 3.76199C173.837 3.37932 173.767 3.02466 173.627 2.69799C173.496 2.36199 173.3 2.06799 173.039 1.81599C172.787 1.56399 172.479 1.36799 172.115 1.22799C171.76 1.07866 171.359 1.00399 170.911 1.00399H165.521Z"
+                                fill="#34C759" />
+                        </svg>
+                    </div>
+                </a>
+
+                <nav class="header__menu menu">
+                    <ul class="menu__items">
+                        <li class="menu__item"><a href="#" class="menu__link">Menu</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Recipes</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Chefs</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <div class="main__container">
+                <img class="main__image" src="img/main/background.jpg" alt="background">
+                <h1 class="main__title">Your <span class="text_bold">favourite food</span>
+                    delivered <span class="text_bold">hot & fresh</span></h1>
+                <div class="main__text">HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping &
+                    marinating, so
+                    you can cook a fresh homemade dinner in just 15 minutes.</div>
+                <a href="#" class="main__button button">Order Now</a>
+                <div class="main__contacts contacts">
+                    <div class="contacts__time time">
+                        <div class="time__text">Today 10:00 am - 7:00 pm</div>
+                        <div class="time__subtitle">Working hours</div>
+                    </div>
+                    <div class="contacts__address address">
+                        <div class="address__text">Velyka Vasylkivska 100</div>
+                        <div class="address__subtitle">Get Directions</div>
+                    </div>
+                    <div class="contacts__phone phone">
+                        <div class="phone__text">+38 (063)833 24 15</div>
+                        <div class="phone__subtitle">Call Online</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about">
+                <div class="about__container">
+                    <h2 class="about__title title">The Basics Of Healthy Food</h2>
+
+                    <div class="about__text">In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea
+                        aliquip aliquip consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate
+                        irure
+                        esse aliquip.</div>
+
+                    <div class="itc-slider" data-slider="itc-slider">
+
+                        <div class="itc-slider-wrapper">
+                            <div class="itc-slider-items">
+                                <div class="itc-slider-item">
+                                    <!-- Контент 1 слайда -->
+                                    <img src="img/main/about/placeholder1.jpg" alt="dishes" class="photo-slider__image">
+                                </div>
+                                <div class="itc-slider-item">
+                                    <!-- Контент 2 слайда -->
+                                    <img src="img/main/about/placeholder2.jpg" alt="dishes" class="photo-slider__image">
+                                </div>
+                                <div class="itc-slider-item">
+                                    <!-- Контент 3 слайда -->
+                                    <img src="img/main/about/placeholder1.jpg" alt="dishes" class="photo-slider__image">
+                                </div>
+                                <div class="itc-slider-item">
+                                    <!-- Контент 4 слайда -->
+                                    <img src="img/main/about/placeholder2.jpg" alt="dishes" class="photo-slider__image">
+                                </div>
+                                <div class="itc-slider-item">
+                                    <!-- Контент 5 слайда -->
+                                    <img src="img/main/about/placeholder1.jpg" alt="dishes" class="photo-slider__image">
+                                </div>
+                                <div class="itc-slider-item">
+                                    <!-- Контент 6 слайда -->
+                                    <img src="img/main/about/placeholder2.jpg" alt="dishes" class="photo-slider__image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                        <button class="itc-slider-btn itc-slider-btn-next"></button>
+                        <div class="itc-slider">
+
+                            <ol class="itc-slider-indicators">
+                                <!-- data-slide-to="0" – для перехода к 1 слайду -->
+                                <li class="itc-slider-indicator" data-slide-to="0"></li>
+                                <!-- data-slide-to="1" – для перехода к 2 слайду -->
+                                <li class="itc-slider-indicator" data-slide-to="1"></li>
+                                <!-- data-slide-to="2" – для перехода к 3 слайду -->
+                                <li class="itc-slider-indicator" data-slide-to="2"></li>
+                                <!-- data-slide-to="2" – для перехода к 4 слайду -->
+                                <li class="itc-slider-indicator" data-slide-to="3"></li>
+                                <!-- data-slide-to="2" – для перехода к 5 слайду -->
+                                <li class="itc-slider-indicator" data-slide-to="4"></li>
+                                <!-- data-slide-to="2" – для перехода к 6 слайду -->
+                                <li class="itc-slider-indicator" data-slide-to="5"></li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="work__container">
+                    <h2 class="work__title title">How it works</h2>
+                    <div class="work__cards green-cards">
+                        <div class="green-cards__card card">
+                            <div class="card__title">Pick meals
+                            </div>
+                            <div class="card__text card__text_black">Choose your meals from our diverse weekly menu.
+                                Find gluten or
+                                dairy
+                                free, low carb & veggie options.</div>
+                        </div>
+                        <div class="green-cards__card card">
+                            <div class="card__title">Choose how often
+                            </div>
+                            <div class="card__text card__text_black">Our team of chefs do the prep work - no more
+                                chopping, measuring,
+                                or
+                                sink full of dishes!</div>
+                        </div>
+                        <div class="green-cards__card card">
+                            <div class="card__title">Fast deliveries
+                            </div>
+                            <div class="card__text card__text_black">Your freshly prepped 15-min dinner kits arrive on
+                                your doorstep in
+                                a
+                                refrigerated box.</div>
+                        </div>
+                        <div class="green-cards__card card">
+                            <div class="card__title">tasty meals
+                            </div>
+                            <div class="card__text card__text_black">Gobble makes cooking fast, so you have more time to
+                                unwind and
+                                be
+                                with
+                                family.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dishes">
+                <div class="dishes__container">
+                    <h2 class="dishes__title title">Dish Of The Day</h2>
+                    <div class="dishes__cards">
+                        <div class="dishes__card">
+                            <div class="card-dish">
+                                <a href="#" class="card-dish__link">
+                                    <img src="img/main/dishes/ico/link.svg" alt="link" class="card-dish__link-img">
+                                </a>
+                                <a href="#" alt="dish1" class="card-dish__picture _ibg">
+                                    <img class="card-dish__image" src="img/main/dishes/image1.jpg" alt="dish1">
+                                </a>
+                                <div class="card-dish__body">
+                                    <a href="" class="card-dish__title">Featured Meal</a>
+                                    <div class="card-dish__subtitle">Served with french fries + drink</div>
+                                    <div class="card-dish__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                                        Add
+                                        whopper patty, Add Tender crisp patty and more...</div>
+                                </div>
+                                <div class="card-dish__bottom">
+                                    <div class="card-dish__stars stars" dir="rtl">
+                                        <span class="card-dish__votes">12</span>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+
+                                    </div>
+                                    <a href="#" class="card-dish__button">ORDER</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dishes__card">
+                            <div class="card-dish">
+                                <a href="#" class="card-dish__link">
+                                    <img src="img/main/dishes/ico/link.svg" alt="link" class="card-dish__link-img">
+                                </a>
+                                <a href="#" alt="dish2" class="card-dish__picture _ibg">
+                                    <img class="card-dish__image" src="img/main/dishes/image2.jpg" alt="dish1">
+                                </a>
+                                <div class="card-dish__body">
+                                    <a href="" class="card-dish__title">Featured Meal</a>
+                                    <div class="card-dish__subtitle">Served with french fries + drink</div>
+                                    <div class="card-dish__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                                        Add
+                                        whopper patty, Add Tender crisp patty and more... </div>
+                                </div>
+                                <div class="card-dish__bottom">
+                                    <div class="card-dish__stars stars" dir="rtl">
+                                        <span class="card-dish__votes">12</span>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+
+                                    </div>
+                                    <a href="#" class="card-dish__button">ORDER</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dishes__card">
+                            <div class="card-dish">
+                                <a href="#" class="card-dish__link">
+                                    <img src="img/main/dishes/ico/link.svg" alt="link" class="card-dish__link-img">
+                                </a>
+                                <a href="#" alt="dish3" class="card-dish__picture _ibg">
+                                    <img class="card-dish__image" src="img/main/dishes/image3.jpg" alt="dish1">
+                                </a>
+                                <div class="card-dish__body">
+                                    <a href="" class="card-dish__title">Featured Meal</a>
+                                    <div class="card-dish__subtitle">Served with french fries + drink</div>
+                                    <div class="card-dish__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                                        Add
+                                        whopper patty, Add Tender crisp patty and more...</div>
+                                </div>
+                                <div class="card-dish__bottom">
+                                    <div class="card-dish__stars stars" dir="rtl">
+                                        <span class="card-dish__votes">12</span>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+
+                                    </div>
+                                    <a href="#" class="card-dish__button">ORDER</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dishes__card">
+                            <div class="card-dish">
+                                <a href="#" class="card-dish__link">
+                                    <img src="img/main/dishes/ico/link.svg" alt="link" class="card-dish__link-img">
+                                </a>
+                                <a href="#" alt="dish4" class="card-dish__picture _ibg">
+                                    <img class="card-dish__image" src="img/main/dishes/image4.jpg" alt="dish1">
+                                </a>
+                                <div class="card-dish__body">
+                                    <a href="" class="card-dish__title">Featured Meal</a>
+                                    <div class="card-dish__subtitle">Served with french fries + drink</div>
+                                    <div class="card-dish__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                                        Add
+                                        whopper patty, Add Tender crisp patty and more...</div>
+                                </div>
+                                <div class="card-dish__bottom">
+                                    <div class="card-dish__stars stars" dir="rtl">
+                                        <span class="card-dish__votes">12</span>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+
+                                    </div>
+                                    <a href="#" class="card-dish__button">ORDER</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dishes__card">
+                            <div class="card-dish">
+                                <a href="#" class="card-dish__link">
+                                    <img src="img/main/dishes/ico/link.svg" alt="link" class="card-dish__link-img">
+                                </a>
+                                <a href="#" alt="dish5" class="card-dish__picture _ibg">
+                                    <img class="card-dish__image" src="img/main/dishes/image5.jpg" alt="dish1">
+                                </a>
+                                <div class="card-dish__body">
+                                    <a href="" class="card-dish__title">Featured Meal</a>
+                                    <div class="card-dish__subtitle">Served with french fries + drink</div>
+                                    <div class="card-dish__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                                        Add
+                                        whopper patty, Add Tender crisp patty and more...</div>
+                                </div>
+                                <div class="card-dish__bottom">
+                                    <div class="card-dish__stars stars" dir="rtl">
+                                        <span class="card-dish__votes">12</span>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+
+                                    </div>
+                                    <a href="#" class="card-dish__button">ORDER</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dishes__card">
+                            <div class="card-dish">
+                                <a href="#" class="card-dish__link">
+                                    <img src="img/main/dishes/ico/link.svg" alt="link" class="card-dish__link-img">
+                                </a>
+                                <a href="#" alt="dish6" class="card-dish__picture _ibg">
+                                    <img class="card-dish__image" src="img/main/dishes/image6.jpg" alt="dish1">
+                                </a>
+                                <div class="card-dish__body">
+                                    <a href="" class="card-dish__title">Featured Meal</a>
+                                    <div class="card-dish__subtitle">Served with french fries + drink</div>
+                                    <div class="card-dish__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                                        Add
+                                        whopper patty, Add Tender crisp patty and more...</div>
+                                </div>
+                                <div class="card-dish__bottom">
+                                    <div class="card-dish__stars stars" dir="rtl">
+                                        <span class="card-dish__votes">12</span>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+                                        <a href="#" class="star">★</a>
+
+                                    </div>
+                                    <a href="#" class="card-dish__button">ORDER</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chefs">
+                <div class="chefs__container">
+                    <h2 class="chefs__title title">This month's chefs</h2>
+                    <div class="chefs__cards">
+                        <div class="chef-card">
+                            <div class="chef-card__body">
+                                <div class="chef-card__persona">
+                                    <div class="chef-card__picture">
+                                        <img src="img/main/chefs/Avatar-gregory.jpg" alt="" class="chef-card__image">
+                                    </div>
+                                    <div class="chef-card__family">
+                                        <div class="chef-card__name">Gregory Flores</div>
+                                        <div class="chef-card__status">Chef of the cold</div>
+                                    </div>
+                                </div>
+                                <div class="chef-card__work-pictures">
+                                    <img src="img/main/chefs/gr1.jpg" alt="" class="chef-card__work-image">
+                                    <img src="img/main/chefs/gr2.jpg" alt="" class="chef-card__work-image">
+                                    <img src="img/main/chefs/gr3.jpg" alt="" class="chef-card__work-image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chef-card">
+                            <div class="chef-card__body">
+                                <div class="chef-card__persona">
+                                    <div class="chef-card__picture">
+                                        <img src="img/main/chefs/Annet.jpg" alt="" class="chef-card__image">
+                                    </div>
+                                    <div class="chef-card__family">
+                                        <div class="chef-card__name">Annette Cooper</div>
+                                        <div class="chef-card__status">Chef of the hot</div>
+                                    </div>
+                                </div>
+                                <div class="chef-card__work-pictures">
+                                    <img src="img/main/chefs/an1.jpg" alt="" class="chef-card__work-image">
+                                    <img src="img/main/chefs/an2.jpg" alt="" class="chef-card__work-image">
+                                    <img src="img/main/chefs/an3.jpg" alt="" class="chef-card__work-image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chef-card">
+                            <div class="chef-card__body">
+                                <div class="chef-card__persona">
+                                    <div class="chef-card__picture">
+                                        <img src="img/main/chefs/greg.jpg" alt="" class="chef-card__image">
+                                    </div>
+                                    <div class="chef-card__family">
+                                        <div class="chef-card__name">Greg Fox</div>
+                                        <div class="chef-card__status">Сhef macro kitchen</div>
+                                    </div>
+                                </div>
+                                <div class="chef-card__work-pictures">
+                                    <img src="img/main/chefs/greg1.png" alt="" class="chef-card__work-image">
+                                    <img src="img/main/chefs/greg2.jpg" alt="" class="chef-card__work-image">
+                                    <img src="img/main/chefs/greg3.jpg" alt="" class="chef-card__work-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipes">
+                <div class="recipes__container">
+                    <h2 class="recipes__title title">Recipes From Our Chefs</h2>
+                    <div class="recipes__body">
+                        <div class="body-recipes">
+                            <div class="body-recipes__big-recipe">
+
+                                <div class="recipe-big">
+                                    <div class="recipe-big__body">
+                                        <a href="#" class="recipe-big__link">
+                                            <img src="img/main/recipes/ico/Icon-left.svg" alt="link"
+                                                class="recipe-big__link-img">
+                                        </a>
+                                        <a href="#" class="recipe-big__teg teg">breakfast</a>
+                                        <div class="recipe-big__data">05 Jul 2016</div>
+                                        <a href="#" class="recipe-big__title">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit</a>
+                                        <div class="recipe-big__name">Jason Keller</div>
+                                        <div class="recipe-big__bottom">
+                                            <div class="recipe-big__view view-white">275</div>
+                                            <div class="recipe-big__messages messages-white">12</div>
+                                        </div>
+                                        <img src="img/main/recipes/big-block.jpg" alt="" class="recipe-big__background">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="body-recipes__small-recipes">
+
+                                <div class="recipes-small">
+
+                                    <div class="recipe-small">
+                                        <div class="recipe-small__body">
+                                            <div class="recipe-small__top">
+                                                <a href="#" class="recipe-small__text">Lorem ipsum dolor sit amet,
+                                                    consectetur
+                                                    adipiscing
+                                                    elit,
+                                                    sed
+                                                    do eiusmod tempor incididunt ut</a>
+                                            </div>
+                                            <div class="recipe-small__bottom">
+                                                <div class="recipe-small__teg-data">
+                                                    <a href="#" class="recipe-small__teg teg">lunch</a>
+                                                    <div class="recipe-small__data">07 Jan 2016</div>
+                                                </div>
+                                                <div class="recipe-small__view-messages">
+                                                    <div class="recipe-small__view view-white">275</div>
+                                                    <div class="recipe-small__messages messages-white">12</div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="recipe-small">
+
+                                        <div class="recipe-small__body">
+                                            <img src="img/main/recipes/small-block.jpg" alt=""
+                                                class="recipe-small_background">
+                                            <div class="recipe-small__top">
+                                                <a href="#" class="recipe-small__text">Lorem ipsum dolor sit amet,
+                                                    consectetur
+                                                    adipiscing
+                                                    elit,
+                                                    sed
+                                                    do eiusmod tempor incididunt ut</a>
+                                            </div>
+                                            <div class="recipe-small__bottom">
+                                                <div class="recipe-small__teg-data">
+                                                    <a href="#" class="recipe-small__teg teg">dinner</a>
+                                                    <div class="recipe-small__data">07 Jan 2016</div>
+                                                </div>
+                                                <div class="recipe-small__view-messages">
+                                                    <div class="recipe-small__view view-white">275</div>
+                                                    <div class="recipe-small__messages messages-white">12</div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="recipe-small">
+                                        <div class="recipe-small__body">
+                                            <div class="recipe-small__top">
+                                                <a href="#" class="recipe-small__text">Lorem ipsum dolor sit amet,
+                                                    consectetur
+                                                    adipiscing
+                                                    elit,
+                                                    sed
+                                                    do eiusmod tempor incididunt ut</a>
+                                            </div>
+                                            <div class="recipe-small__bottom">
+                                                <div class="recipe-small__teg-data">
+                                                    <a href="#" class="recipe-small__teg teg">sweets</a>
+                                                    <div class="recipe-small__data">07 Jan 2016</div>
+                                                </div>
+                                                <div class="recipe-small__view-messages">
+                                                    <div class="recipe-small__view view-white">275</div>
+                                                    <div class="recipe-small__messages messages-white">12</div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="social">
+                <div class="social__container">
+                    <h2 class="social__title title">We in Social</h2>
+                    <div class="social__cards">
+                        <div class="card-social">
+                            <div class="card-social__top">
+                                <div class="card-social__social-name twitter">Twitter</div>
+                                <a href="" class="card-social__link">follow us</a>
+                            </div>
+                            <div class="card-social__body">
+                                <div class="card-social__data">24 Jun at 16:20 pm</div>
+                                <div class="card-social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                </div>
+                                <div class="card-social__teg-name">@DennisFerguson</div>
+                            </div>
+                        </div>
+                        <div class="card-social">
+                            <div class="card-social__top">
+                                <div class="card-social__social-name instagram">Instagram</div>
+                                <a href="" class="card-social__link">follow us</a>
+                            </div>
+                            <div class="instagram-card">
+                                <div class="instagram-card__body">
+                                    <div class="instagram-card__element">
+                                        <a href="#" class="instagram-card__link">
+                                            <img src="img/main/social/image1.jpg" alt="" class="instagram-card__image">
+                                        </a>
+                                    </div>
+                                    <div class="instagram-card__element">
+                                        <a href="#" class="instagram-card__link">
+                                            <img src="img/main/social/image2.jpg" alt="" class="instagram-card__image">
+                                        </a>
+                                    </div>
+                                    <div class="instagram-card__element">
+                                        <a href="#" class="instagram-card__link">
+                                            <img src="img/main/social/image3.jpg" alt="" class="instagram-card__image">
+                                        </a>
+                                    </div>
+                                    <div class="instagram-card__element">
+                                        <a href="#" class="instagram-card__link">
+                                            <img src="img/main/social/image4.jpg" alt="" class="instagram-card__image">
+                                        </a>
+                                    </div>
+                                    <div class="instagram-card__element">
+                                        <a href="#" class="instagram-card__link">
+                                            <img src="img/main/social/image5.jpg" alt="" class="instagram-card__image">
+                                        </a>
+                                    </div>
+                                    <div class="instagram-card__element">
+                                        <a href="#" class="instagram-card__link">
+                                            <img src="img/main/social/image6.jpg" alt="" class="instagram-card__image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-social">
+                            <div class="card-social__top">
+                                <div class="card-social__social-name facebook">Facebook</div>
+                                <a href="" class="card-social__link">follow us</a>
+                            </div>
+                            <div class="card-social__body">
+                                <div class="card-social__data">26 Jun at 16:20 pm</div>
+                                <div class="card-social__text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed
+                                    do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing </div>
+                                <div class="card-social__teg-name"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+
+                <div class="footer-top">
+                    <div class="footer-top__container">
+                        <div class="footer-top__contacts contacts">
+                            <div class="contacts__time time">
+                                <div class="time__text">Today 10:00 am - 7:00 pm</div>
+                                <div class="time__subtitle">Working hours</div>
+                            </div>
+                            <div class="contacts__address address">
+                                <div class="address__text">Velyka Vasylkivska 100</div>
+                                <div class="address__subtitle">Get Directions</div>
+                            </div>
+                            <div class="contacts__phone phone">
+                                <div class="phone__text">+38 (063)833 24 15</div>
+                                <div class="phone__subtitle">Call Online</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom__container">
+                        <a href="#" class="footer-bottom__logo logo">
+                            <div class="logo__ico svg">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_350)">
+                                        <path
+                                            d="M17.0984 8.16492H7.90162C3.53781 8.16492 0 11.7087 0 16.0817C0 20.4547 3.53781 24 7.90162 24H17.0984C21.4622 24 25 20.4547 25 16.0817C25 11.7087 21.4622 8.16492 17.0984 8.16492ZM16.9261 23.0921C13.0637 23.0921 9.93201 19.9537 9.93201 16.0832C9.93201 12.2127 13.0637 9.07436 16.9261 9.07436C20.7885 9.07436 23.9202 12.2127 23.9202 16.0832C23.9202 19.9537 20.7885 23.0921 16.9261 23.0921Z"
+                                            fill="#34C759" />
+                                        <path
+                                            d="M16.0047 4.68437C16.0047 5.68167 16.2632 6.61732 16.7169 7.42811C14.5112 7.04738 12.833 5.1206 12.833 2.80075C12.833 2.50942 12.8592 2.22426 12.9115 1.9468C13.3422 1.81578 13.8005 1.74487 14.2743 1.74487C15.0895 1.74487 15.8571 1.95451 16.5246 2.32137C16.1909 3.03967 16.0047 3.83967 16.0047 4.68437Z"
+                                            fill="#34C759" />
+                                        <path
+                                            d="M22.2067 2.80077C22.2067 4.92023 20.8069 6.71137 18.8827 7.29557C18.552 7.39576 18.2074 7.46204 17.849 7.48516H17.8475C17.2676 6.70366 16.9246 5.7341 16.9246 4.68439C16.9246 4.03391 17.0568 3.41426 17.2953 2.8501C17.9674 1.26243 19.4856 0.123314 21.2838 0C21.8636 0.781503 22.2067 1.75106 22.2067 2.80077Z"
+                                            fill="#34C759" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_350">
+                                            <rect width="25" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <div class="logo__ico-text svg">
+                                <svg width="175" height="12" viewBox="0 0 175 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.966003 1.00399V11H3.164V6.68799H7.21V11H9.408V1.00399H7.21V4.83999H3.164V1.00399H0.966003Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M13.443 1.00399V11H21.031V9.15199H15.641V6.70199H20.485V4.99399H15.641V2.85199H20.919V1.00399H13.443Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M27.1411 7.13599L28.4431 3.46799H28.4711L29.7311 7.13599H27.1411ZM27.3511 1.00399L23.5711 11H25.7831L26.5671 8.77399H30.3051L31.0611 11H33.3431L29.6051 1.00399H27.3511Z"
+                                        fill="#34C759" />
+                                    <path d="M36.3051 1.00399V11H43.3751V9.15199H38.5031V1.00399H36.3051Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M47.6307 2.85199V11H49.8287V2.85199H52.8247V1.00399H44.6347V2.85199H47.6307Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M56.0773 1.00399V11H58.2753V6.68799H62.3213V11H64.5193V1.00399H62.3213V4.83999H58.2753V1.00399H56.0773Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M71.1443 7.10799V11H73.3423V7.16399L77.0523 1.00399H74.6023L72.2783 4.95199L69.9403 1.00399H67.4763L71.1443 7.10799Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M87.4867 7.68199H85.3587C85.3493 8.29799 85.4613 8.82999 85.6947 9.27799C85.928 9.72599 86.2407 10.0947 86.6327 10.384C87.034 10.6733 87.4913 10.8833 88.0047 11.014C88.5273 11.154 89.064 11.224 89.6147 11.224C90.296 11.224 90.8933 11.1447 91.4067 10.986C91.9293 10.8273 92.3633 10.608 92.7087 10.328C93.0633 10.0387 93.3293 9.69799 93.5067 9.30599C93.684 8.91399 93.7727 8.48932 93.7727 8.03199C93.7727 7.47199 93.6513 7.01466 93.4087 6.65999C93.1753 6.29599 92.8953 6.00666 92.5687 5.79199C92.242 5.57732 91.9107 5.42332 91.5747 5.32999C91.248 5.22732 90.9913 5.15732 90.8047 5.11999C90.1793 4.96132 89.6707 4.83066 89.2787 4.72799C88.896 4.62532 88.5927 4.52266 88.3687 4.41999C88.154 4.31732 88.0093 4.20532 87.9347 4.08399C87.86 3.96266 87.8227 3.80399 87.8227 3.60799C87.8227 3.39332 87.8693 3.21599 87.9627 3.07599C88.056 2.93599 88.1727 2.81932 88.3127 2.72599C88.462 2.63266 88.6253 2.56732 88.8027 2.52999C88.98 2.49266 89.1573 2.47399 89.3347 2.47399C89.6053 2.47399 89.8527 2.49732 90.0767 2.54399C90.31 2.59066 90.5153 2.66999 90.6927 2.78199C90.87 2.89399 91.01 3.04799 91.1127 3.24399C91.2247 3.43999 91.29 3.68732 91.3087 3.98599H93.4367C93.4367 3.40732 93.3247 2.91732 93.1007 2.51599C92.886 2.10532 92.592 1.76932 92.2187 1.50799C91.8453 1.24666 91.416 1.05999 90.9307 0.947991C90.4547 0.826658 89.9553 0.765991 89.4327 0.765991C88.9847 0.765991 88.5367 0.826658 88.0887 0.947991C87.6407 1.06932 87.2393 1.25599 86.8847 1.50799C86.53 1.75999 86.2407 2.07732 86.0167 2.45999C85.802 2.83332 85.6947 3.27666 85.6947 3.78999C85.6947 4.24732 85.7787 4.63932 85.9467 4.96599C86.124 5.28332 86.3527 5.54932 86.6327 5.76399C86.9127 5.97866 87.23 6.15599 87.5847 6.29599C87.9393 6.42666 88.3033 6.53866 88.6767 6.63199C89.0407 6.73466 89.4 6.82799 89.7547 6.91199C90.1093 6.99599 90.4267 7.09399 90.7067 7.20599C90.9867 7.31799 91.2107 7.45799 91.3787 7.62599C91.556 7.79399 91.6447 8.01333 91.6447 8.28399C91.6447 8.53599 91.5793 8.74599 91.4487 8.91399C91.318 9.07266 91.1547 9.19866 90.9587 9.29199C90.7627 9.38532 90.5527 9.45066 90.3287 9.48799C90.1047 9.51599 89.8947 9.52999 89.6987 9.52999C89.4093 9.52999 89.1293 9.49732 88.8587 9.43199C88.588 9.35732 88.35 9.24999 88.1447 9.10999C87.9487 8.96066 87.79 8.76933 87.6687 8.53599C87.5473 8.30266 87.4867 8.01799 87.4867 7.68199Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M106.7 11L109.388 1.00399H107.232L105.594 7.89199H105.566L103.858 1.00399H101.8L100.064 7.80799H100.036L98.4545 1.00399H96.2565L98.9025 11H101.128L102.794 4.19599H102.822L104.516 11H106.7Z"
+                                        fill="#34C759" />
+                                    <path d="M112.501 1.00399V11H114.699V1.00399H112.501Z" fill="#34C759" />
+                                    <path
+                                        d="M120.942 2.85199V11H123.14V2.85199H126.136V1.00399H117.946V2.85199H120.942Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M136.053 4.36399H138.181C138.115 3.78532 137.957 3.27199 137.705 2.82399C137.453 2.37599 137.131 2.00266 136.739 1.70399C136.356 1.39599 135.917 1.16266 135.423 1.00399C134.937 0.845324 134.419 0.765991 133.869 0.765991C133.103 0.765991 132.413 0.901325 131.797 1.17199C131.19 1.44266 130.677 1.81599 130.257 2.29199C129.837 2.76799 129.515 3.32799 129.291 3.97199C129.067 4.60666 128.955 5.29732 128.955 6.04399C128.955 6.77199 129.067 7.45332 129.291 8.08799C129.515 8.71333 129.837 9.25933 130.257 9.72599C130.677 10.1927 131.19 10.5613 131.797 10.832C132.413 11.0933 133.103 11.224 133.869 11.224C134.485 11.224 135.049 11.1307 135.563 10.944C136.076 10.7573 136.524 10.4867 136.907 10.132C137.289 9.77732 137.597 9.34799 137.831 8.84399C138.064 8.33999 138.209 7.77532 138.265 7.14999H136.137C136.053 7.82199 135.819 8.36333 135.437 8.77399C135.063 9.18466 134.541 9.38999 133.869 9.38999C133.374 9.38999 132.954 9.29666 132.609 9.10999C132.263 8.91399 131.983 8.65732 131.769 8.33999C131.554 8.02266 131.395 7.66799 131.293 7.27599C131.199 6.87466 131.153 6.46399 131.153 6.04399C131.153 5.60532 131.199 5.18066 131.293 4.76999C131.395 4.35932 131.554 3.99532 131.769 3.67799C131.983 3.35132 132.263 3.09466 132.609 2.90799C132.954 2.71199 133.374 2.61399 133.869 2.61399C134.139 2.61399 134.396 2.66066 134.639 2.75399C134.891 2.83799 135.115 2.95932 135.311 3.11799C135.507 3.27666 135.67 3.46332 135.801 3.67799C135.931 3.88332 136.015 4.11199 136.053 4.36399Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M141.866 1.00399V11H144.064V6.68799H148.11V11H150.308V1.00399H148.11V4.83999H144.064V1.00399H141.866Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M154.343 1.00399V11H161.931V9.15199H156.541V6.70199H161.385V4.99399H156.541V2.85199H161.819V1.00399H154.343Z"
+                                        fill="#34C759" />
+                                    <path
+                                        d="M167.719 5.52599V2.71199H170.127C170.631 2.71199 171.009 2.82399 171.261 3.04799C171.513 3.26266 171.639 3.61266 171.639 4.09799C171.639 4.60199 171.513 4.96599 171.261 5.18999C171.009 5.41399 170.631 5.52599 170.127 5.52599H167.719ZM165.521 1.00399V11H167.719V7.09399H169.917C170.467 7.09399 170.864 7.21532 171.107 7.45799C171.349 7.70066 171.508 8.08332 171.583 8.60599C171.639 9.00732 171.681 9.42733 171.709 9.86599C171.737 10.3047 171.811 10.6827 171.933 11H174.131C174.028 10.86 173.949 10.692 173.893 10.496C173.846 10.2907 173.809 10.076 173.781 9.85199C173.762 9.62799 173.748 9.40866 173.739 9.19399C173.729 8.97933 173.72 8.79266 173.711 8.63399C173.692 8.38199 173.655 8.12999 173.599 7.87799C173.552 7.62599 173.473 7.39732 173.361 7.19199C173.249 6.97732 173.104 6.79532 172.927 6.64599C172.749 6.48732 172.525 6.37066 172.255 6.29599V6.26799C172.815 6.04399 173.216 5.71732 173.459 5.28799C173.711 4.85866 173.837 4.34999 173.837 3.76199C173.837 3.37932 173.767 3.02466 173.627 2.69799C173.496 2.36199 173.3 2.06799 173.039 1.81599C172.787 1.56399 172.479 1.36799 172.115 1.22799C171.76 1.07866 171.359 1.00399 170.911 1.00399H165.521Z"
+                                        fill="#34C759" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="footer__copyright">© Designed by Yellow Snow. All Rights Reserved. </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
